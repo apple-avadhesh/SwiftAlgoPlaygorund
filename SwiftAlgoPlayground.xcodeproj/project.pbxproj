@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		96DB79662546A17300C7519D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DB79642546A17300C7519D /* Main.storyboard */; };
 		96DB79682546A17500C7519D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DB79672546A17500C7519D /* Assets.xcassets */; };
 		96DB796B2546A17500C7519D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DB79692546A17500C7519D /* LaunchScreen.storyboard */; };
+		96DB79762546A8EF00C7519D /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 96DB79752546A8EF00C7519D /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DB79762546A8EF00C7519D /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SwiftAlgoPlayground;
+			packageProductDependencies = (
+				96DB79752546A8EF00C7519D /* Algorithms */,
+			);
 			productName = SwiftAlgoPlayground;
 			productReference = 96DB795B2546A17300C7519D /* SwiftAlgoPlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 96DB79522546A17300C7519D;
+			packageReferences = (
+				96DB79742546A8EF00C7519D /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 96DB795C2546A17300C7519D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96DB79742546A8EF00C7519D /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96DB79752546A8EF00C7519D /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96DB79742546A8EF00C7519D /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96DB79532546A17300C7519D /* Project object */;
 }
